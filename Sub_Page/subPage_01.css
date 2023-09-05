@@ -1,0 +1,1807 @@
+@import url("https://webfontworld.github.io/sunn/SUIT.css");
+
+.header {
+}
+.header_inner {
+  display: flex;
+  width: 1800px;
+  height: 100px;
+  background-color: #23232433;
+  border-radius: 0 0 30px 30px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+/* 헤더 메뉴 */
+
+.header_inner .menu {
+  position: relative;
+}
+.header_inner .menu ul {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 500px;
+}
+.header_inner .menu ul li {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: white;
+}
+.header_inner .menu ul li a {
+}
+
+.header_inner .menu ul li {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.header_inner .menu > ul > li:nth-child(1)::after {
+  content: "국내";
+  font-weight: 800;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.header_inner .menu > ul > li:nth-child(2)::after {
+  content: "해외";
+  font-weight: 800;
+  display: block;
+  transition: 0.5s;
+}
+.header_inner .menu > ul > li:nth-child(3)::after {
+  content: "이벤트";
+  font-weight: 800;
+  display: block;
+  transition: 0.5s;
+}
+.header_inner .menu > ul > li:nth-child(4)::after {
+  content: "여행 후기";
+  font-weight: 800;
+  display: block;
+  transition: 0.5s;
+}
+
+.header_inner .menu > ul > li:nth-child(1):hover::after {
+  content: "Domestic";
+  font-weight: 800;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+.header_inner .menu > ul > li:nth-child(2):hover::after {
+  content: "Overseas";
+  font-weight: 800;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+.header_inner .menu > ul > li:nth-child(3):hover::after {
+  content: "Event";
+  font-weight: 800;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+.header_inner .menu > ul > li:nth-child(4):hover::after {
+  content: "Review";
+  font-weight: 800;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+
+/* 서브메뉴 영역 */
+
+.sub_menu {
+  position: absolute;
+  width: 500px;
+  height: 100px;
+  bottom: -100px;
+  left: -5px;
+  z-index: 2;
+  display: block;
+  border-radius: 30px;
+  background-color: #23232433;
+}
+
+.sub_menu ul {
+  height: 200px;
+  width: 500px;
+  display: block;
+}
+.sub_menu ul > li {
+  height: 200px;
+}
+.sub_menu ul li:hover {
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+
+/* 로고 영역 */
+
+.header_inner .logo {
+  margin-left: -300px;
+}
+.header_inner .logo a {
+  font-size: 30px;
+  line-height: 3;
+}
+.header_inner .logo img {
+  width: 180px;
+}
+
+/* 언어 영역 */
+.header_inner .lang {
+  margin-left: 10px;
+}
+.header_inner .lang ul {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  color: white;
+  margin-right: 30px;
+}
+.header_inner .lang ul li {
+  width: 80px;
+  height: 81px;
+  text-align: CENTER;
+  line-height: 4.5;
+  cursor: pointer;
+  font-size: 18px;
+}
+.header_inner .lang ul li a {
+  display: block;
+}
+
+.header_inner .lang ul li a:hover {
+  background-color: aqua;
+}
+
+.header_inner .lang > ul li:nth-child(1)::before {
+  content: "KOR";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+}
+
+.header_inner .lang > ul li:nth-child(2)::before {
+  content: "ENG";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+}
+.header_inner .lang > ul li:nth-child(3)::before {
+  content: "LOGIN";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+}
+
+.header_inner .lang > ul li:nth-child(1):hover::before {
+  content: "한국어";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+.header_inner .lang > ul li:nth-child(2):hover::before {
+  content: "영어";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+
+.header_inner .lang > ul li:nth-child(3):hover::before {
+  content: "로그인";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+
+/* 햄버거 바 */
+.navbar {
+  display: block;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  line-height: 2;
+}
+
+.navbar__logo {
+  font-size: 24px;
+  color: var(--text-color);
+}
+.navbar__logo i {
+  color: var(--accent-color);
+}
+.navbar__menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: white;
+  height: 46vh;
+  background-color: #000000b2;
+}
+.navbar__menu li {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+.navbar__menu li a {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.navbar__menu li:hover {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+.navbar__sns {
+  display: none;
+  justify-content: center;
+  width: 100%;
+  background-color: #000000b2;
+}
+
+.navbar__sns li {
+  padding: 8px 12px;
+}
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  color: white;
+}
+
+/* 반응형 영역 */
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .header_inner {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #23232433;
+    border-radius: 0 0 30px 30px;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .header_inner .menu {
+    position: relative;
+    width: 100%;
+  }
+  .header_inner .menu ul {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  .header_inner .menu ul li {
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: none;
+  }
+  .header_inner .menu ul li {
+    cursor: pointer;
+    font-size: 1.5vh;
+  }
+
+  /* 로고영역 */
+  .header_inner .logo {
+    margin-top: 5px;
+    z-index: 999;
+  }
+  .header_inner .logo a {
+    font-size: 10px;
+    line-height: 4;
+    cursor: pointer;
+  }
+  .header_inner .logo img {
+    width: 90px;
+    margin-left: -31vh;
+  }
+
+  /* 언어 영역 */
+  .header_inner .lang ul li {
+    margin-left: 10px;
+    display: none;
+  }
+
+  /* 햄버거바 */
+  .navbar {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    line-height: 2;
+    z-index: 999;
+  }
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    height: 31.6vh;
+    background-color: #000000c7;
+  }
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar__menu li a {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    transition: 0.5s;
+    font-family: "SUIT";
+  }
+
+  .navbar__menu li a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  }
+
+  .navbar__sns {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    background-color: #000000c7;
+  }
+  .navbar__sns i {
+    font-size: 1.3rem;
+    color: white;
+  }
+  .navbar__sns i:hover {
+    color: red;
+  }
+
+  .navbar__toggleBtn {
+    display: block;
+  }
+  .navbar__menu.active,
+  .navbar__sns.active {
+    display: flex;
+  }
+}
+
+/* 메인비쥬얼 영역 */
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+.main_visual {
+  width: 100%;
+  height: 1080px;
+  background: no-repeat;
+  background-size: cover;
+  margin: auto;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: -1;
+}
+
+.main_visual img {
+  width: 100%;
+  height: inherit;
+}
+
+/* 섹션01 영역 */
+
+.section01 {
+  width: 100%;
+  margin: auto;
+  margin-top: 150px;
+  position: relative;
+}
+.section01_inner {
+  width: 100%;
+  height: 828px;
+  flex-shrink: 0;
+  background: linear-gradient(
+    1deg,
+    rgba(255, 255, 255, 0.61) 93%,
+    rgba(0, 0, 0, 0) 97%
+  );
+}
+.section01_content {
+  font-family: "SUIT";
+  font-weight: 700;
+  margin-top: 2vh;
+  border: 1px solid #00000000;
+}
+
+.section01_content h2 {
+  color: black;
+  text-align: center;
+  font-weight: 800;
+  font-size: 80px;
+  margin-top: 50px;
+  font-style: normal;
+  line-height: normal;
+}
+.section01_content p {
+  text-align: center;
+  font-family: "SUIT";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* 섹션02 영역 */
+
+.section02 {
+  width: 1920px;
+  margin: auto;
+}
+
+/* 추천 상품순 / 낮은 가격순 / 높은 가격순 */
+.section02_right {
+  margin-top: 50px;
+  float: right;
+  margin-right: 90px;
+}
+
+.section02_right ul {
+  display: flex;
+}
+.section02_right ul li {
+  padding: 1.1rem;
+  font-family: "SUIT";
+}
+
+/* 섹션2 이너 */
+.section02_inner {
+  position: absolute;
+  width: 1562px;
+  height: 2800px;
+  flex-shrink: 0;
+  margin: auto;
+  bottom: 0;
+  margin-top: 525px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 80px 80px 0px 0px;
+  background: #ffffff;
+}
+
+/* 이미지 / 내용 / 가격 */
+.section02_content {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #c7c7c7;
+  border-radius: 30px;
+  width: 1323px;
+  height: 353px;
+  margin: 47px auto;
+  padding: 2rem;
+}
+
+/* 이미지 */
+.section02_content .sec_img {
+  width: 365px;
+  height: 339px;
+  overflow: hidden;
+}
+.sec_img img {
+  width: 365px;
+  height: 339px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sec_img img:hover {
+  opacity: 0.8;
+  transform: scale(1.4);
+}
+
+/*  */
+
+/* 내용 */
+.section02_content .sec_content {
+  width: 610px;
+  height: 339px;
+  cursor: pointer;
+}
+
+.sec_content h1 {
+  color: #000;
+  font-family: "SUIT";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.sec_content h2 {
+  color: #9c9c9c;
+  font-family: "SUIT";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 30px;
+}
+.sec_content h3 {
+  color: #000;
+  font-family: "SUIT";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: block;
+  margin-bottom: 30px;
+}
+.sec_content b {
+  color: red;
+  font-family: "SUIT";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.sec_content h4 {
+  color: black;
+  font-family: "SUIT";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.sec_content h4 img {
+  width: 25px;
+}
+
+/* 가격 */
+.section02_content .sec_price {
+  height: 339px;
+}
+.sec_price h5 {
+  color: #000;
+  text-align: center;
+  font-family: "SUIT";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 70px;
+  margin-bottom: 19px;
+}
+.sec_price h6 {
+  color: #000;
+  text-align: center;
+  font-family: "SUIT";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 174px;
+}
+.sec_price button {
+  margin-left: 15px;
+  width: 141px;
+  height: 36px;
+  border: 1px solid #000;
+  background: #000;
+  cursor: pointer;
+  color: white;
+}
+
+/* 달력 */
+.section02_cal {
+  border: 1px solid #b4b4b46c;
+  width: 1323px;
+  height: 550px;
+  margin: auto;
+  border-radius: 30px;
+}
+
+td {
+  width: 50px;
+  height: 60px;
+}
+
+.Calendar {
+  text-align: center;
+  width: 70%;
+  margin: 15px auto;
+}
+
+.Calendar > thead > tr:first-child > td {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.Calendar > thead > tr:last-child > td {
+  font-weight: 600;
+  border-bottom: 1px solid #b9b9b9;
+  color: rgb(0, 0, 0);
+  margin-left: 50px;
+  text-align: center;
+}
+
+.Calendar > tbody > tr > td > p {
+  height: 45px;
+  width: 45px;
+  border-radius: 45px;
+  transition-duration: 0.2s;
+  line-height: 45px;
+  margin-left: 50px;
+  display: block;
+  text-align: center;
+}
+
+/* 지난달 */
+.pastDay {
+  color: lightgray;
+}
+
+.today {
+  background-color: #1bb7ff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.futureDay {
+  background-color: #ffffff;
+  cursor: pointer;
+  position: relative;
+}
+
+.futureDay::before {
+  content: "35만원";
+  width: 100px;
+  height: 44px;
+  color: rgb(201, 51, 51);
+  position: absolute;
+  font-size: 10px;
+  bottom: -68%;
+  left: 50%;
+  z-index: 999;
+  transform: translateX(-50%);
+}
+
+.futureDay:hover {
+  background: #eee;
+}
+
+.futureDay.choiceDay,
+.today.choiceDay {
+  border: 1px solid #1bb7ff;
+  color: red;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 티켓 영역 */
+.section02_ticket {
+  margin-top: 50px;
+}
+.section02_ticket .ticket_inner {
+  width: 1323px;
+  height: 1580px;
+  border-radius: 30px;
+  margin: auto;
+}
+
+/* 티켓 상단 영역 */
+
+.ticket_inner {
+  background-color: #e4e4e45d;
+  border-radius: 30px;
+  height: 1680px;
+}
+
+.ticket_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  width: 95%;
+  margin: auto;
+}
+.ticket_top .top01 {
+}
+.ticket_top .top01 i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.ticket_top .top01 h1 {
+  color: #000;
+  text-align: center;
+  font-family: "SUIT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  margin-left: 21px;
+}
+.ticket_top .top02 {
+}
+.ticket_top .top02 ul {
+  display: flex;
+  margin-left: -350px;
+}
+.ticket_top .top02 ul li {
+  font-family: "SUIT";
+  width: 97px;
+  height: 27px;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 2;
+  color: 878787;
+  border: 1px solid #878787;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.ticket_top .top02 ul li:hover {
+  background-color: #878787;
+  color: white;
+}
+
+.ticket_top .top02 ul .first {
+  border: 1px solid #e32222;
+  color: #e32222;
+}
+
+.ticket_top .top02 ul .first:hover {
+  background-color: #e32222;
+  color: white;
+}
+
+.ticket_top .top02 ul .second {
+  border: 1px solid #2031bb;
+  color: #2031bb;
+}
+
+.ticket_top .top02 ul .second:hover {
+  background-color: #2031bb;
+  color: white;
+}
+
+#my_table tbody tr {
+  border: 1px solid #dbdbdb;
+}
+.ticket_top .top03 .speed {
+  border: 1px solid #929292;
+  width: 200px;
+  height: 46px;
+  color: #000;
+  text-align: center;
+  font-family: "SUIT";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: -25px;
+}
+
+/* 섹션2 중간영역 */
+.ticket_middle {
+  width: 95%;
+  margin: auto;
+}
+.middle_inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+/* 티켓 div */
+
+#my_table tr td {
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
+.middle_left {
+  width: 800px;
+  padding: 2rem;
+  cursor: pointer;
+}
+.middle_left h1 {
+  width: 80px;
+  text-align: center;
+  line-height: 2;
+  height: 30px;
+  color: #7a7a7a;
+  border: 1px solid #7a7a7a;
+  margin-bottom: 25px;
+}
+.middle_left h2 {
+  font-size: 2rem;
+  font-family: "SUIT";
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.middle_left h3 {
+  margin-bottom: 20px;
+}
+.middle_left b {
+  margin-bottom: 20px;
+  color: green;
+}
+.middle_left img {
+  width: 30px;
+  height: 30px;
+}
+
+.middle_right {
+  padding: 2rem;
+  width: 400px;
+  text-align: center;
+
+  margin-right: -100px;
+}
+.middle_right h4 {
+  font-family: "SUIT";
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: right;
+}
+
+.middle_right .btn {
+  display: flex;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.middle_right .btn1 {
+  width: 200px;
+  font-size: 0.8rem;
+  height: 50px;
+  color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1px solid #aaaaaa;
+}
+
+/* 반응형 버튼 */
+.middle_right .btn3 {
+  border: 1px solid #b1b1b144;
+  width: 200px;
+  font-size: 0.8rem;
+  height: 50px;
+  color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1px solid #000;
+  display: none;
+}
+.middle_right .btn2 {
+  border: 1px solid #000;
+  border-radius: 50px;
+  width: 200px;
+  font-size: 0.8rem;
+  margin-left: 10px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* 숫자 */
+.number {
+  width: 50%;
+  text-align: center;
+  margin: 10px auto;
+}
+.number ul {
+  display: flex;
+  justify-content: center;
+}
+.number ul li {
+  padding: 1.2rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.number ul .first {
+  border-radius: 45px;
+  background-color: rgb(13, 193, 248);
+  color: white;
+  text-decoration: underline;
+}
+
+.number ul li:hover {
+  border-radius: 45px;
+  background-color: rgb(13, 193, 248);
+  color: white;
+  text-decoration: underline;
+}
+
+.middle_left .middle_red {
+  color: #e32222;
+  border: 1px solid #e32222;
+}
+
+/* 예약 가능 */
+.middle_left .middle_blue {
+  color: #2031bb;
+  border: 1px solid #2031bb;
+}
+
+/* 섹션 3 높이용 */
+.section03 {
+  height: 2300px;
+}
+
+/* 푸터영역 */
+.footer1 {
+  width: 1920px;
+  height: 150px;
+  margin: auto;
+}
+.footer1_inner {
+  width: 1560px;
+  margin: auto;
+}
+.footer1_inner ul {
+  display: flex;
+}
+.footer1_inner ul li {
+  width: 500px;
+  height: 66px;
+  color: #383838;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: center;
+  line-height: 3;
+  border-bottom: 1px solid #b4a9a9;
+}
+
+.footer1_inner ul li a {
+  display: block;
+}
+
+.footer1_inner ul li a:hover {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .footer1 {
+    margin-top: 34vh;
+    width: 100%;
+    height: 12vh;
+  }
+  .footer1_inner {
+    padding: 3rem 0;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+  }
+  .footer1_inner ul li {
+    width: 100%;
+    height: 30px;
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Inter";
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    line-height: 3;
+    border-bottom: 1px solid #c4c4c4;
+  }
+}
+
+.footer2 {
+  width: 100%;
+  margin: auto;
+  background: #d9d9d9;
+  height: 423px;
+}
+.footer2_inner {
+  width: 1560px;
+  margin: auto;
+  height: inherit;
+  display: flex;
+}
+.footer2_L {
+  line-height: 2.5;
+  padding: 1rem;
+  font-family: "SUIT";
+}
+.footer2_L h1 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin-top: 20px;
+}
+.footer2_L span {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "SUIT";
+  line-height: normal;
+}
+.footer2_L em {
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+  font-family: "SUIT";
+}
+.footer2_L p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+
+/* 푸터 오른쪽 영역 */
+.footer2_R {
+  width: 40%;
+  border-left: 1px solid #000;
+  margin: auto;
+}
+.footer2_R i {
+  font-size: 25px;
+}
+
+.footer2_R .footer_Rcontent {
+  display: flex;
+
+  text-align: center;
+  margin-right: 90px;
+}
+.footer2_R .footer_Rcontent .footer_R1 {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.footer2_R .footer_Rcontent .footer_R1 h2 {
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  line-height: normal;
+  cursor: pointer;
+  font-family: "SUIT";
+}
+.footer2_R .footer_Rcontent .footer_R1 p {
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  font-family: "SUIT";
+  line-height: normal;
+}
+.footer2_R .footer_Rcontent .footer_R2 {
+  text-align: center;
+}
+.footer2_R .footer_Rcontent .footer_R2 h2 {
+  font-family: "SUIT";
+  color: #000;
+  cursor: pointer;
+  font-size: 30px;
+  font-style: normal;
+  line-height: normal;
+}
+.footer2_R .footer_Rcontent .footer_R2 p {
+  font-family: "SUIT";
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.footer_sns {
+  margin: auto;
+  margin-left: 50px;
+}
+.footer_sns ul {
+  display: flex;
+}
+.footer_sns ul li {
+  display: flex;
+  height: 30px;
+  padding: 2rem;
+  margin: auto;
+}
+
+.footer_sns ul li img {
+  width: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.footer_sns ul li img:hover {
+  transform: scale(1.2);
+  border-bottom: 1px solid#E32222;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+#my_table {
+  margin: 0 auto;
+}
+
+/* Pagination. */
+.pagination {
+  background-color: DFDFDF;
+  padding: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#numbers {
+  padding: 0;
+  margin: 0 2rem;
+  list-style-type: none;
+  display: flex;
+}
+
+#numbers li a {
+  color: black;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+#numbers li a:hover {
+  opacity: 1;
+  border-radius: 30px;
+  border: 1px solid #1bb7ff;
+}
+
+#numbers li a.active {
+  opacity: 1;
+  background: #fff;
+  border-radius: 30px;
+  border: 1px solid #1bb7ff;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .footer2 {
+    width: 100%;
+    margin: auto;
+    background: #d9d9d9;
+    height: auto;
+  }
+  .footer2_inner {
+    width: 100%;
+    margin: 8vh auto auto auto;
+    height: inherit;
+    display: flex;
+  }
+  .footer2_L {
+    line-height: 1.5;
+    padding: 2rem;
+  }
+  .footer2_L h1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_L span {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_L em {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_L b {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_L p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .footer2_R {
+    width: 50%;
+    border-left: 1px solid #000;
+    margin: auto;
+  }
+  .footer2_R i {
+    font-size: 10px;
+  }
+
+  .footer2_R .footer_Rcontent {
+    display: flex;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  .footer2_R .footer_Rcontent .footer_R1 h2 {
+    color: #000;
+    font-size: 15px;
+    width: 10vh;
+    margin-left: -1vh;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .footer2_R .footer_Rcontent .footer_R1 p {
+    color: #000;
+    width: 80px;
+    font-size: 10px;
+    font-style: normal;
+    margin-left: -2vh;
+    font-family: "Inter";
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_R .footer_Rcontent .footer_R2 h2 {
+    color: #000;
+    width: 100px;
+    cursor: pointer;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_R .footer_Rcontent .footer_R2 p {
+    color: #000;
+    font-size: 10px;
+    margin-left: -2vh;
+    font-style: normal;
+    font-family: "Inter";
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer_sns {
+    margin: auto;
+    margin-left: 0;
+  }
+  .footer_sns ul {
+    display: flex;
+  }
+  .footer_sns ul li {
+    display: flex;
+    height: 30px;
+    padding: 0rem;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .footer_sns ul li img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .footer_sns ul li img:hover {
+    transform: scale(1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+}
+
+/* 메인비쥬얼 / 섹션 */
+@media (max-width: 768px) {
+  .main_visual {
+    background: no-repeat;
+    background-size: cover;
+    margin: auto;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -1;
+  }
+  .main_visual img {
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+  }
+  .section01 {
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+  }
+  .section01_inner {
+    width: 100%;
+    height: 60vh;
+    flex-shrink: 0;
+    background: rgba(29, 28, 28, 0.377);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .section01_content h2 {
+    color: white;
+    text-align: center;
+    font-family: "SUIT";
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 2vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .section01_content p {
+    color: white;
+    text-align: center;
+    font-family: "SUIT";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  /* 섹션2 */
+  .section02 {
+    width: 100%;
+    margin: auto;
+  }
+
+  .section02_right {
+    margin-top: 50px;
+    float: right;
+    margin-right: 50px;
+  }
+
+  .section02_right ul {
+    display: flex;
+    margin-left: 1vh;
+  }
+  .section02_right ul li {
+    padding: 0.5rem;
+
+    font-family: "SUIT";
+  }
+
+  /* 섹션2 이너 */
+  .section02_inner {
+    position: absolute;
+    width: 100%;
+    height: 3004px;
+    flex-shrink: 0;
+    margin: auto;
+    bottom: 0;
+    margin-top: 350px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px 20px 0px 0px;
+    background: #fff;
+  }
+  /* 이미지 / 내용 / 가격 */
+  .section02_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid #c7c7c7;
+    width: 100%;
+    height: 50vh;
+    height: auto;
+    padding: 0;
+  }
+  /* 이미지 */
+  .section02_content .sec_img {
+    width: 95%;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 1vh;
+    height: 50%;
+  }
+  .sec_img img {
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+  }
+  /* 내용 */
+  .section02_content .sec_content {
+    width: 42vh;
+    height: 32vh;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .sec_content h1 {
+    color: #000;
+    font-family: "SUIT";
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .sec_content h2 {
+    color: #9c9c9c;
+    font-family: "SUIT";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+  .sec_content h3 {
+    color: #000;
+    font-family: "SUIT";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .sec_content b {
+    color: red;
+    font-family: "SUIT";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .sec_content h4 {
+    color: black;
+    font-family: "SUIT";
+    font-size: 5px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    text-align: center;
+  }
+  .sec_content h4 img {
+    width: 25px;
+  }
+  /* 가격 */
+  .section02_content .sec_price {
+    height: 30%;
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 2vh;
+  }
+  .sec_price h5 {
+    color: #000;
+    text-align: center;
+    font-family: "SUIT";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 70px;
+    margin-bottom: 0px;
+  }
+  .sec_price h6 {
+    margin-top: 20px;
+    color: #000;
+    text-align: center;
+    font-family: "SUIT";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0px;
+  }
+  .sec_price button {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 141px;
+    height: 36px;
+    border: 1px solid #000;
+    background: #000;
+    cursor: pointer;
+    color: white;
+  }
+
+  /* 달력 */
+  .section02_cal {
+    border: 1px solid #b4b4b4;
+    width: 100%;
+    height: 550px;
+    margin: auto;
+  }
+  .Calendar {
+    text-align: center;
+    width: 100%;
+    margin: 15px auto;
+  }
+  .Calendar > thead > tr:first-child > td {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .Calendar > thead > tr:last-child > td {
+    font-weight: 600;
+    border-bottom: 1px solid #b9b9b9;
+    color: rgb(0, 0, 0);
+  }
+
+  .Calendar > tbody > tr > td > p {
+    height: 45px;
+    width: 5vw;
+    font-size: 10px;
+    border-radius: 45px;
+    transition-duration: 0.2s;
+    margin-left: 2vh;
+    display: block;
+    text-align: center;
+  }
+  .today {
+    background-color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+    font-size: 0.5rem;
+    color: black;
+  }
+
+  .futureDay {
+    background-color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    font-size: 0.5rem;
+  }
+
+  .futureDay.choiceDay,
+  .today.choiceDay {
+    border: 1px solid #1bb7ff;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  /* 티켓 영역 */
+  .section02_ticket {
+    margin-top: 5vh;
+  }
+  .ticket_inner {
+    width: 100%;
+    height: 140vh;
+    border: 1px solid #c7c7c7;
+    margin: auto;
+    background-color: #e6e6e6;
+  }
+  /* 티켓 상단 영역 */
+  .ticket_top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.2rem;
+  }
+  .ticket_top .top01 {
+    width: 100%;
+  }
+  .ticket_top .top01 i {
+    font-size: 10px;
+    cursor: pointer;
+  }
+  .ticket_top .top01 h1 {
+    color: #000;
+    text-align: center;
+    font-family: "SUIT";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 8vh;
+    margin-left: 0;
+  }
+  .ticket_top .top02 {
+  }
+  .ticket_top .top02 ul {
+    display: flex;
+    width: 100%;
+    margin-left: -10px;
+    font-size: 10px;
+  }
+  .ticket_top .top02 ul li {
+    font-family: "SUIT";
+    width: 50px;
+    height: 27px;
+    margin-left: 2vh;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 3;
+    color: #878787;
+    border: 1px solid #878787;
+    cursor: pointer;
+    font-size: 10px;
+  }
+
+  .ticket_top .top03 {
+  }
+  .ticket_top .top03 .speed {
+    border: 1px solid #929292;
+    width: 10vh;
+    margin-top: 7px;
+    margin-right: 2vh;
+    height: 37px;
+    color: #000;
+    text-align: center;
+    font-family: "SUIT";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  /* 섹션2 중간영역 */
+  .ticket_middle {
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid #ffffff00;
+  }
+  .middle_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .middle_left {
+    width: 30vh;
+    padding: 1rem;
+  }
+  .middle_left h1 {
+    width: 80px;
+    text-align: center;
+    line-height: 2;
+    height: 30px;
+    color: #7a7a7a;
+    border: 1px solid #7a7a7a;
+    margin-bottom: 20px;
+  }
+  .middle_left h2 {
+    font-size: 0.8rem;
+    font-family: "SUIT";
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .middle_left h3 {
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+  }
+  .middle_left b {
+    margin-bottom: 20px;
+    color: green;
+    font-size: 1rem;
+  }
+  .middle_left img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .middle_right {
+    width: 20vh;
+    margin-left: -150px;
+    text-align: center;
+  }
+  .middle_right h4 {
+    font-family: "SUIT";
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-right: -30px;
+  }
+
+  .middle_right .btn {
+    display: flex;
+    margin-top: 100px;
+    margin-right: -30px;
+    cursor: pointer;
+  }
+
+  .middle_right .btn1 {
+    border: 1px solid #b1b1b1;
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    display: none;
+  }
+  /* 반응형 버튼 */
+  .middle_right .btn3 {
+    border: 1px solid #94949444;
+    width: 100px;
+    font-size: 0.8rem;
+    height: 50px;
+    color: black;
+    border-radius: 50px;
+    font-weight: 800;
+    cursor: pointer;
+    display: block;
+  }
+  .middle_right .btn2 {
+    border: 1px solid #000;
+    width: 100px;
+    margin-left: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  }
+  /* 티켓 div */
+
+  #my_table tbody tr {
+  }
+  #my_table tr td {
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 0px;
+  }
+  /* 숫자 */
+  .number {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .number ul {
+    display: flex;
+    justify-content: center;
+  }
+  .number ul li {
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .number ul .first {
+    border-radius: 45px;
+    background-color: rgb(13, 193, 248);
+    color: white;
+    text-decoration: underline;
+  }
+
+  .number ul li:hover {
+    border-radius: 45px;
+    background-color: rgb(13, 193, 248);
+    color: white;
+    text-decoration: underline;
+  }
+
+  .section03 {
+    height: 2500px;
+  }
+
+  /* Pagination. */
+  .pagination {
+    margin-top: 20px;
+    background: #e6e6e694;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,214 @@
+.section04 {
+  width: 1920px;
+  height: 730px;
+  margin: auto;
+}
+.section04_inner {
+  width: 1920px;
+  height: 900px;
+  background-color: #efeded;
+}
+
+.section04_inner h2 {
+  color: #000;
+  text-align: center;
+  padding: 1.2rem 0;
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-family: "MapoBackpacking";
+  font-style: normal;
+  font-weight: 400;
+  margin: auto;
+  line-height: 4;
+  width: 500px;
+  height: 200px;
+}
+.container > div img {
+  width: 305px;
+  height: 457px;
+}
+
+.container {
+  position: relative;
+}
+
+.content_04 .heading_04 {
+  position: absolute;
+  width: 152px;
+  height: 47.8px;
+  background-color: red;
+  color: white;
+  top: 0;
+  color: #fff;
+  font-size: 25px;
+  font-family: "KBO Dia Gothic";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  line-height: 2;
+  text-align: center;
+}
+.content_04 .text_04 {
+  position: absolute;
+  top: 120px;
+  color: white;
+}
+.content_04 .text_04 h3 {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 30px;
+  font-family: "KBO Dia Gothic";
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.content_04 .text_04 p {
+  color: #fff;
+  font-size: 18px;
+  font-family: "KBO Dia Gothic";
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.content_04 .cuntury_04 {
+  position: absolute;
+  bottom: 50px;
+  margin-left: 20px;
+  color: #fff;
+  font-size: 50px;
+  font-family: "KBO Dia Gothic";
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.img_04 {
+  width: 320px;
+  height: 457px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.img_04 img {
+  transition: 0.8s;
+  cursor: pointer;
+  border-radius: 0 30px 0 30px;
+}
+
+.img_04::after {
+  content: "더 알아보기";
+  text-align: center;
+  line-height: 2;
+  color: white;
+  position: absolute;
+  border: 1px solid #000;
+  background-color: black;
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+  bottom: 200px;
+  margin-left: 95px;
+  cursor: pointer;
+  display: none;
+}
+
+.img_04 img:hover {
+  transform: scale(1.3);
+  opacity: 0.7;
+}
+.img_04 img:hover::after {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .section04 {
+    width: 100%;
+    height: 800px;
+    margin: auto;
+  }
+  .section04_inner {
+    width: 100%;
+    height: 600px;
+    background-color: #efeded;
+    margin: auto;
+  }
+  .section04_inner h2 {
+    color: #000;
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 30px;
+    font-family: "MapoBackpacking";
+    font-style: normal;
+    font-weight: 400;
+    height: 0;
+
+    margin-left: -5vh;
+
+    margin-bottom: 130px;
+  }
+  .container > div img {
+    width: 100%;
+    height: 70%;
+  }
+  .content_04 .heading_04 {
+    position: absolute;
+    width: 80px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    top: 0;
+    color: #fff;
+    font-size: 16px;
+    font-family: "KBO Dia Gothic";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    line-height: 2;
+    text-align: center;
+  }
+  .content_04 .text_04 {
+    margin-top: -50px;
+  }
+  .content_04 .text_04 h3 {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "KBO Dia Gothic";
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .content_04 .text_04 p {
+    color: #fff;
+    font-size: 15px;
+    font-family: "KBO Dia Gothic";
+    margin-left: 20px;
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .content_04 .cuntury_04 {
+    position: absolute;
+    bottom: 50px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 40px;
+    font-family: "KBO Dia Gothic";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 100px;
+  }
+  .img_04 img:hover {
+    transform: scale(1);
+    opacity: 1;
+  }
+  .img_04 img:hover::after {
+    display: block;
+    cursor: pointer;
+  }
+}

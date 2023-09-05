@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  /************** 전체 영역 **************/
+  body {
+  }
+  .wrap {
+    height: 100%;
+    flex-direction: column;
+  }
+}

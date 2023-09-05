@@ -1,0 +1,354 @@
+.header {
+}
+.header_inner {
+  display: flex;
+  width: 1800px;
+  height: 100px;
+  background-color: #23232433;
+  border-radius: 0 0 30px 30px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+/* 헤더 메뉴 */
+
+.header_inner .menu {
+  position: relative;
+}
+.header_inner .menu ul {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 500px;
+}
+.header_inner .menu ul li {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: white;
+}
+.header_inner .menu ul li a {
+}
+
+.header_inner .menu ul li {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.header_inner .menu > ul > li:nth-child(1)::after {
+  content: "국내";
+  font-weight: 800;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.header_inner .menu > ul > li:nth-child(2)::after {
+  content: "해외";
+  font-weight: 800;
+  display: block;
+  transition: 0.5s;
+}
+.header_inner .menu > ul > li:nth-child(3)::after {
+  content: "이벤트";
+  font-weight: 800;
+  display: block;
+  transition: 0.5s;
+}
+.header_inner .menu > ul > li:nth-child(4)::after {
+  content: "여행 후기";
+  font-weight: 800;
+  display: block;
+  transition: 0.5s;
+}
+
+.header_inner .menu > ul > li:nth-child(1):hover::after {
+  content: "Domestic";
+  font-weight: 800;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+.header_inner .menu > ul > li:nth-child(2):hover::after {
+  content: "Overseas";
+  font-weight: 800;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+.header_inner .menu > ul > li:nth-child(3):hover::after {
+  content: "Event";
+  font-weight: 800;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+.header_inner .menu > ul > li:nth-child(4):hover::after {
+  content: "Review";
+  font-weight: 800;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+
+/* 서브메뉴 영역 */
+
+.sub_menu {
+  position: absolute;
+  width: 500px;
+  height: 100px;
+  bottom: -100px;
+  left: -5px;
+  z-index: 2;
+  display: block;
+  border-radius: 30px;
+  background-color: #23232433;
+}
+
+.sub_menu ul {
+  height: 200px;
+  width: 500px;
+  display: block;
+}
+.sub_menu ul > li {
+  height: 200px;
+}
+.sub_menu ul li:hover {
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+
+/* 로고 영역 */
+
+.header_inner .logo {
+  margin-left: -250px;
+}
+.header_inner .logo a {
+  font-size: 30px;
+  line-height: 3;
+}
+.header_inner .logo img {
+  width: 180px;
+}
+
+/* 언어 영역 */
+.header_inner .lang {
+  margin-left: 10px;
+}
+.header_inner .lang ul {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  color: white;
+  margin-right: 30px;
+}
+.header_inner .lang ul li {
+  width: 80px;
+  height: 81px;
+  text-align: CENTER;
+  line-height: 4.5;
+  cursor: pointer;
+  font-size: 18px;
+}
+.header_inner .lang ul li a {
+  display: block;
+}
+
+.header_inner .lang ul li a:hover {
+  background-color: aqua;
+}
+
+.header_inner .lang > ul li:nth-child(1)::before {
+  content: "KOR";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+}
+
+.header_inner .lang > ul li:nth-child(2)::before {
+  content: "ENG";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+}
+.header_inner .lang > ul li:nth-child(3)::before {
+  content: "LOGIN";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+}
+
+.header_inner .lang > ul li:nth-child(1):hover::before {
+  content: "한국어";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+.header_inner .lang > ul li:nth-child(2):hover::before {
+  content: "영어";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+
+.header_inner .lang > ul li:nth-child(3):hover::before {
+  content: "로그인";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+
+/* 햄버거 바 */
+.navbar {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.navbar__logo {
+  font-size: 24px;
+  color: var(--text-color);
+}
+.navbar__logo i {
+  color: var(--accent-color);
+}
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.navbar__menu li {
+  padding: 8px 12px;
+}
+.navbar__menu li:hover {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+.navbar__sns {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+.navbar__sns li {
+  padding: 8px 12px;
+}
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  color: white;
+}
+
+/* 반응형 영역 */
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    display: flex;
+  }
+  .header_inner {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #23232433;
+    border-radius: 0 0 30px 30px;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .header_inner .menu {
+    position: relative;
+    width: 100%;
+    display: none;
+  }
+
+  /* 로고영역 */
+  .header_inner .logo {
+    margin-top: 0.5vh;
+    z-index: 999;
+    margin-left: 1vh;
+  }
+  .header_inner .logo a {
+    font-size: 10px;
+    line-height: 4;
+    cursor: pointer;
+  }
+  .header_inner .logo img {
+    width: 13vh;
+    margin-left: 0;
+  }
+
+  /* 언어 영역 */
+  .header_inner .lang ul li {
+    margin-left: 1vh;
+    display: none;
+  }
+
+  /* 햄버거바 */
+  .navbar {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    line-height: 2;
+    z-index: 9;
+  }
+
+  .navbar__menu li {
+    line-height: 1;
+  }
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    height: 45vh;
+    background-color: #000000b2;
+  }
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .navbar__menu li a {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+
+  .navbar__menu li a:hover {
+    color: red;
+    text-decoration: underline;
+  }
+
+  .navbar__sns {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    background-color: #000000b2;
+  }
+  .navbar__sns i {
+    font-size: 1.3rem;
+    color: white;
+  }
+  .navbar__sns i:hover {
+    color: red;
+  }
+
+  .navbar__toggleBtn {
+    display: block;
+  }
+  .navbar__menu.active,
+  .navbar__sns.active {
+    display: flex;
+  }
+}

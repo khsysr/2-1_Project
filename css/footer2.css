@@ -1,0 +1,248 @@
+.footer2 {
+  width: 100%;
+  margin: auto;
+  background: #d9d9d9;
+  height: 423px;
+}
+.footer2_inner {
+  width: 1560px;
+  margin: auto;
+  height: inherit;
+  display: flex;
+}
+.footer2_L {
+  line-height: 2.5;
+  padding: 1rem;
+  font-family: "KBO Dia Gothic";
+}
+.footer2_L h1 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin-top: 20px;
+}
+.footer2_L span {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "KBO Dia Gothic";
+  line-height: normal;
+}
+.footer2_L em {
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+  font-family: "KBO Dia Gothic";
+}
+.footer2_L p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+
+/* 푸터 오른쪽 영역 */
+.footer2_R {
+  width: 40%;
+  border-left: 1px solid #000;
+  margin: auto;
+}
+.footer2_R i {
+  font-size: 25px;
+}
+
+.footer2_R .footer_Rcontent {
+  display: flex;
+
+  text-align: center;
+  margin-right: 90px;
+}
+.footer2_R .footer_Rcontent .footer_R1 {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.footer2_R .footer_Rcontent .footer_R1 h2 {
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  line-height: normal;
+  cursor: pointer;
+  font-family: "KBO Dia Gothic";
+}
+.footer2_R .footer_Rcontent .footer_R1 p {
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  font-family: "KBO Dia Gothic";
+  line-height: normal;
+}
+.footer2_R .footer_Rcontent .footer_R2 {
+  text-align: center;
+}
+.footer2_R .footer_Rcontent .footer_R2 h2 {
+  font-family: "KBO Dia Gothic";
+  color: #000;
+  cursor: pointer;
+  font-size: 30px;
+  font-style: normal;
+  line-height: normal;
+}
+.footer2_R .footer_Rcontent .footer_R2 p {
+  font-family: "KBO Dia Gothic";
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.footer_sns {
+  margin: auto;
+  margin-left: 50px;
+}
+.footer_sns ul {
+  display: flex;
+}
+.footer_sns ul li {
+  display: flex;
+  height: 30px;
+  padding: 2rem;
+  margin: auto;
+}
+
+.footer_sns ul li img {
+  width: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.footer_sns ul li img:hover {
+  transform: scale(1.2);
+  border-bottom: 1px solid rgb(255, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .footer2 {
+    width: 100%;
+    margin: auto;
+    background: #d9d9d9;
+    height: auto;
+  }
+  .footer2_inner {
+    width: 100%;
+    margin: auto;
+    height: inherit;
+    display: flex;
+  }
+  .footer2_L {
+    line-height: 1.5;
+    padding: 2rem;
+  }
+  .footer2_L h1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_L span {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_L em {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_L b {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_L p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .footer2_R {
+    width: 50%;
+    border-left: 1px solid #000;
+    margin: auto;
+  }
+  .footer2_R i {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .footer2_R .footer_Rcontent {
+    display: flex;
+    text-align: center;
+    padding: 0 1rem;
+    margin-top: 5vh;
+  }
+  .footer2_R .footer_Rcontent .footer_R1 h2 {
+    color: #000;
+    font-size: 15px;
+    width: 80px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .footer2_R .footer_Rcontent .footer_R1 p {
+    color: #000;
+    width: 80px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Inter";
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_R .footer_Rcontent .footer_R2 h2 {
+    color: #000;
+    width: 100px;
+    cursor: pointer;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_R .footer_Rcontent .footer_R2 p {
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Inter";
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer_sns {
+    margin: auto;
+    margin-left: 0;
+  }
+  .footer_sns ul {
+    display: flex;
+  }
+  .footer_sns ul li {
+    display: flex;
+    height: 30px;
+    padding: 0rem;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .footer_sns ul li img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .footer_sns ul li img:hover {
+    transform: scale(1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+}

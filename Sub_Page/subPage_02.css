@@ -1,0 +1,1542 @@
+@import url("https://webfontworld.github.io/sunn/SUIT.css");
+
+.header {
+}
+.header_inner {
+  display: flex;
+  width: 1800px;
+  height: 100px;
+  background-color: #23232433;
+  border-radius: 0 0 30px 30px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+/* 헤더 메뉴 */
+
+.header_inner .menu {
+  position: relative;
+}
+.header_inner .menu ul {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 500px;
+}
+.header_inner .menu ul li {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color: white;
+}
+.header_inner .menu ul li a {
+}
+
+.header_inner .menu ul li {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.header_inner .menu > ul > li:nth-child(1)::after {
+  content: "국내";
+  font-weight: 800;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.header_inner .menu > ul > li:nth-child(2)::after {
+  content: "해외";
+  font-weight: 800;
+  display: block;
+  transition: 0.5s;
+}
+.header_inner .menu > ul > li:nth-child(3)::after {
+  content: "이벤트";
+  font-weight: 800;
+  display: block;
+  transition: 0.5s;
+}
+.header_inner .menu > ul > li:nth-child(4)::after {
+  content: "여행 후기";
+  font-weight: 800;
+  display: block;
+  transition: 0.5s;
+}
+
+.header_inner .menu > ul > li:nth-child(1):hover::after {
+  content: "Domestic";
+  font-weight: 800;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+.header_inner .menu > ul > li:nth-child(2):hover::after {
+  content: "Overseas";
+  font-weight: 800;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+.header_inner .menu > ul > li:nth-child(3):hover::after {
+  content: "Event";
+  font-weight: 800;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+.header_inner .menu > ul > li:nth-child(4):hover::after {
+  content: "Review";
+  font-weight: 800;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+
+/* 서브메뉴 영역 */
+
+.sub_menu {
+  position: absolute;
+  width: 500px;
+  height: 100px;
+  bottom: -100px;
+  left: -5px;
+  z-index: 2;
+  display: block;
+  border-radius: 30px;
+  background-color: #23232433;
+}
+
+.sub_menu ul {
+  height: 200px;
+  width: 500px;
+  display: block;
+}
+.sub_menu ul > li {
+  height: 200px;
+}
+.sub_menu ul li:hover {
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+
+/* 로고 영역 */
+
+.header_inner .logo {
+  margin-left: -300px;
+}
+.header_inner .logo a {
+  font-size: 30px;
+  line-height: 3;
+}
+.header_inner .logo img {
+  width: 180px;
+}
+
+/* 언어 영역 */
+.header_inner .lang {
+  margin-left: 10px;
+}
+.header_inner .lang ul {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  color: white;
+  margin-right: 30px;
+}
+.header_inner .lang ul li {
+  width: 80px;
+  height: 81px;
+  text-align: CENTER;
+  line-height: 4.5;
+  cursor: pointer;
+  font-size: 18px;
+}
+.header_inner .lang ul li a {
+  display: block;
+}
+
+.header_inner .lang ul li a:hover {
+  background-color: aqua;
+}
+
+.header_inner .lang > ul li:nth-child(1)::before {
+  content: "KOR";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+}
+
+.header_inner .lang > ul li:nth-child(2)::before {
+  content: "ENG";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+}
+.header_inner .lang > ul li:nth-child(3)::before {
+  content: "LOGIN";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+}
+
+.header_inner .lang > ul li:nth-child(1):hover::before {
+  content: "한국어";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+.header_inner .lang > ul li:nth-child(2):hover::before {
+  content: "영어";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+
+.header_inner .lang > ul li:nth-child(3):hover::before {
+  content: "로그인";
+  width: 57px;
+  height: 50px;
+  font-weight: 800;
+  transition: 0.9s;
+  border-bottom: 5px solid hsla(184, 63%, 51%, 0.363);
+}
+
+/* 햄버거 바 */
+.navbar {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.navbar__logo {
+  font-size: 24px;
+  color: var(--text-color);
+}
+.navbar__logo i {
+  color: var(--accent-color);
+}
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.navbar__menu li {
+  padding: 8px 12px;
+}
+.navbar__menu li:hover {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+.navbar__sns {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+.navbar__sns li {
+  padding: 8px 12px;
+}
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  color: white;
+}
+
+/* 반응형 영역 */
+@media (max-width: 768px) {
+  .header_inner {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #23232433;
+    border-radius: 0 0 30px 30px;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .header_inner .menu {
+    position: relative;
+    width: 100%;
+  }
+  .header_inner .menu ul {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  .header_inner .menu ul li {
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: none;
+  }
+  .header_inner .menu ul li {
+    cursor: pointer;
+    font-size: 1.5vh;
+  }
+
+  /* 로고영역 */
+  .header_inner .logo {
+    margin-top: 5px;
+    z-index: 999;
+  }
+  .header_inner .logo a {
+    font-size: 10px;
+    line-height: 4;
+    cursor: pointer;
+  }
+  .header_inner .logo img {
+    width: 90px;
+    margin-left: -31vh;
+  }
+
+  /* 언어 영역 */
+  .header_inner .lang ul li {
+    margin-left: 10px;
+    display: none;
+  }
+
+  /* 햄버거바 */
+  .navbar {
+    font-family: "SUIT";
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    line-height: 1;
+    z-index: 999;
+  }
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    height: 33vh;
+    background-color: #000000b2;
+  }
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .navbar__menu li a {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    transition: 0.5s;
+    font-family: "SUIT";
+  }
+
+  .navbar__menu li a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  }
+  .navbar__sns {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    background-color: #000000b2;
+  }
+  .navbar__sns li {
+    padding: 8px 12px;
+  }
+
+  .navbar__toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    color: white;
+  }
+
+  .navbar__sns i {
+    font-size: 1.3rem;
+    color: white;
+  }
+  .navbar__sns i:hover {
+    color: red;
+  }
+
+  .navbar__toggleBtn {
+    display: block;
+  }
+  .navbar__menu.active,
+  .navbar__sns.active {
+    display: flex;
+  }
+}
+
+/* 메인비쥬얼 영역 */
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+.main_visual {
+  width: 100%;
+  height: 1080px;
+  background: no-repeat;
+  background-size: cover;
+  margin: auto;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: -1;
+}
+
+.main_visual img {
+  width: 100%;
+  height: inherit;
+}
+
+/* 섹션01 영역 */
+
+.section01 {
+  width: 100%;
+  margin: auto;
+  margin-top: 150px;
+  position: relative;
+}
+.section01_inner {
+  width: 100%;
+  height: 828px;
+  flex-shrink: 0;
+  background: linear-gradient(
+    1deg,
+    rgba(255, 255, 255, 0.61) 93%,
+    rgba(0, 0, 0, 0) 97%
+  );
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.section01_content {
+  border: 1px solid #00000000;
+}
+
+.section01_content h2 {
+  color: black;
+  text-align: center;
+  font-family: "SUIT";
+  font-size: 80px;
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: 800;
+  margin-top: 50px;
+  line-height: normal;
+}
+.section01_content p {
+  text-align: center;
+  font-family: "SUIT";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* 섹션02 영역 */
+
+.section02 {
+  width: 1920px;
+  margin: auto;
+}
+.section02_inner {
+  position: absolute;
+  width: 1562px;
+  height: 2604px;
+  flex-shrink: 0;
+  margin: auto;
+  bottom: 0;
+  margin-top: 525px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 80px 80px 0px 0px;
+  border: 1px solid #b7b7b7;
+  background: #fff;
+}
+.section02_content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c7c7c7;
+  width: 1323px;
+  height: 353px;
+  margin: 47px auto;
+  padding: 3rem;
+}
+.sec2_left {
+  width: 652px;
+  height: 330px;
+}
+.sec2_left img {
+  width: 652px;
+  height: 330px;
+}
+
+.sec2_left img::before {
+}
+
+.sec2_right {
+  display: flex;
+}
+.sec2_right .right_L {
+}
+.sec2_right .right_L ul {
+}
+.sec2_right .right_L ul li {
+  padding: 2rem;
+  text-align: center;
+  color: #000;
+  font-family: "SUIT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  border-bottom: 1px dotted #b7b7b7;
+}
+.sec2_right .right_R {
+}
+.sec2_right .right_R ul {
+}
+.sec2_right .right_R ul li {
+  padding: 2rem;
+  text-align: center;
+  color: #000;
+  font-family: "SUIT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-bottom: 1px dotted #b7b7b7;
+}
+
+/* 지도영역 */
+.section02_map {
+  width: 1323px;
+  padding: 50px;
+  margin: auto;
+  height: auto;
+}
+.section02_map h1 {
+  color: #e32222;
+  font-family: "SUIT";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 22px;
+  padding: 20px;
+  width: 100px;
+}
+.section02_map p {
+  color: #000;
+  font-family: "SUIT";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 20px;
+}
+
+.section02_map1 {
+  margin-top: 90px;
+  height: 550px;
+  border: 1px solid #e7e7e7;
+  padding: 2rem;
+}
+.section02_map1 button {
+  float: right;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  background: #42a4ff;
+  width: 149px;
+  height: 43px;
+  color: #fff;
+  font-family: "SUIT";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2;
+  cursor: pointer;
+}
+.section02_map1 button img {
+  width: 30px;
+  margin-top: -5px;
+}
+
+/* 소중한 후기 영역 */
+.review {
+  margin-top: 150px;
+}
+
+.review_inner {
+  width: 100%;
+  margin: auto;
+}
+
+.swiper-button-next {
+  color: black !important;
+  position: absolute;
+  margin-left: 50px;
+}
+
+.swiper-button-prev {
+  color: black !important;
+}
+
+.review_heading h2 {
+  color: #000;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font-family: "SUIT";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 100px;
+}
+.review_content {
+  height: 500px;
+  width: 100%;
+}
+
+/* 후기 슬라이드 */
+.swiper {
+  width: 90%;
+  height: 110%;
+}
+
+.swiper-wrapper {
+  height: 1400px;
+  width: 100%;
+}
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1100px;
+  border: 1px solid #b9b9b950;
+  cursor: pointer;
+}
+
+.swiper-slide > div {
+  width: 300px;
+}
+.swiper-slide h2 {
+  padding: 10px;
+  color: #000;
+  font-family: "SUIT";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.swiper-slide p {
+  padding: 10px;
+  color: #acacac;
+  font-family: "SUIT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: 40px;
+}
+
+.swiper-slide .text {
+  width: 220px;
+  display: block;
+  height: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  padding: 1rem;
+}
+
+.swiper-slide span {
+  padding: 10px;
+  width: 269px;
+  height: 83px;
+  color: #000;
+  font-family: "SUIT";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.5;
+}
+.swiper-slide em {
+  padding: 10px;
+  color: #000;
+  font-family: "SUIT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.swiper-slide:nth-child(even) {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+  }
+}
+
+/* 내림용 */
+.section03 {
+  margin-top: 250px;
+  height: 1900px;
+}
+
+/* 섹션04 영역 */
+.section04 {
+  width: 1920px;
+  margin: auto;
+  height: 785px;
+  border: 1px solid #b7b7b748;
+  margin-bottom: 100px;
+  background: #f8f8f8;
+}
+
+.section04_inner {
+}
+.section04_heading {
+  display: flex;
+  margin-left: 57px;
+  margin-top: 20px;
+}
+.section04_heading h2 {
+  color: #000;
+  font-family: "SUIT";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  line-height: 2;
+}
+.section04_heading h3 {
+  color: #000;
+  font-family: "SUIT";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.section04_heading .all {
+  color: red;
+}
+
+.section04_content {
+  display: flex;
+  margin-top: 80px;
+}
+.sec04_img {
+  margin: auto;
+  width: 392px;
+  height: 448px;
+  border: 1px solid #a8a8a896;
+  border-radius: 30px 0 30px 0;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sec04_img:hover {
+  transform: rotate(-5deg);
+}
+.sec04_img:hover img {
+  opacity: 0.7;
+}
+
+.sec04_img:hover p {
+  color: rgba(0, 110, 255, 0.808);
+}
+.sec04_img:hover .sec04_text > img {
+  margin-left: 50px;
+}
+
+.sec04_img img {
+  width: 392px;
+  height: 448px;
+  border-radius: 30px 0 30px 0;
+}
+.sec04_text {
+  position: absolute;
+  width: 392px;
+  height: 154px;
+  bottom: 0;
+  background: #ffffffce;
+  cursor: pointer;
+  border-radius: 0px 0 30px 0;
+}
+
+.sec04_text p {
+  color: black;
+  font-family: "SUIT";
+  line-height: 1.5;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+
+.sec04_text img {
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+  cursor: pointer;
+  animation: ani;
+  filter: invert();
+}
+
+@keyframes ani {
+  0% {
+    rotate: -50deg;
+  }
+  100% {
+    rotate: 50deg;
+  }
+}
+
+/* 푸터영역 */
+.footer1 {
+  width: 1920px;
+  height: 150px;
+  margin: auto;
+}
+.footer1_inner {
+  width: 1560px;
+  margin: auto;
+}
+.footer1_inner ul {
+  display: flex;
+}
+.footer1_inner ul li {
+  width: 500px;
+  height: 66px;
+  color: #383838;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  text-align: center;
+  line-height: 3;
+  border-bottom: 1px solid #b4a9a9;
+}
+
+.footer1_inner ul li a {
+  display: block;
+}
+
+.footer1_inner ul li a:hover {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .footer1 {
+    width: 100%;
+    height: 20vh;
+    margin: auto;
+  }
+  .footer1_inner {
+    padding: 3rem 0;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+  }
+  .footer1_inner ul li {
+    width: 800px;
+    height: 66px;
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Inter";
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    line-height: 3;
+    border-bottom: 1px solid #c4c4c4;
+  }
+}
+
+.footer2 {
+  width: 100%;
+  margin: auto;
+  background: #d9d9d9;
+  height: 423px;
+}
+.footer2_inner {
+  width: 1560px;
+  margin: auto;
+  height: inherit;
+  display: flex;
+}
+.footer2_L {
+  line-height: 2.5;
+  padding: 1rem;
+  font-family: "SUIT";
+}
+.footer2_L h1 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin-top: 20px;
+}
+.footer2_L span {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "SUIT";
+  line-height: normal;
+}
+.footer2_L em {
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+  font-family: "SUIT";
+}
+.footer2_L p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+
+/* 푸터 오른쪽 영역 */
+.footer2_R {
+  width: 40%;
+  border-left: 1px solid #000;
+  margin: auto;
+}
+.footer2_R i {
+  font-size: 25px;
+}
+
+.footer2_R .footer_Rcontent {
+  display: flex;
+
+  text-align: center;
+  margin-right: 90px;
+}
+.footer2_R .footer_Rcontent .footer_R1 {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.footer2_R .footer_Rcontent .footer_R1 h2 {
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  line-height: normal;
+  cursor: pointer;
+  font-family: "SUIT";
+}
+.footer2_R .footer_Rcontent .footer_R1 p {
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  font-family: "SUIT";
+  line-height: normal;
+}
+.footer2_R .footer_Rcontent .footer_R2 {
+  text-align: center;
+}
+.footer2_R .footer_Rcontent .footer_R2 h2 {
+  font-family: "SUIT";
+  color: #000;
+  cursor: pointer;
+  font-size: 30px;
+  font-style: normal;
+  line-height: normal;
+}
+.footer2_R .footer_Rcontent .footer_R2 p {
+  font-family: "SUIT";
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.footer_sns {
+  margin: auto;
+  margin-left: 50px;
+}
+.footer_sns ul {
+  display: flex;
+}
+.footer_sns ul li {
+  display: flex;
+  height: 30px;
+  padding: 2rem;
+  margin: auto;
+}
+
+.footer_sns ul li img {
+  width: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.footer_sns ul li img:hover {
+  transform: scale(1.2);
+  border-bottom: 1px solid rgb(255, 0, 0);
+}
+
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+  .footer2 {
+    width: 100%;
+    margin: auto;
+    background: #d9d9d9;
+    height: auto;
+  }
+  .footer2_inner {
+    width: 100%;
+    margin: auto;
+    height: inherit;
+    display: flex;
+  }
+  .footer2_L {
+    line-height: 1.5;
+    padding: 2rem;
+  }
+  .footer2_L h1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_L span {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_L em {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_L b {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_L p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .footer2_R {
+    width: 50%;
+    border-left: 1px solid #000;
+    margin: auto;
+  }
+  .footer2_R i {
+    font-size: 10px;
+  }
+
+  .footer2_R .footer_Rcontent {
+    display: flex;
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 50px;
+  }
+  .footer2_R .footer_Rcontent .footer_R1 h2 {
+    color: #000;
+    font-size: 15px;
+    width: 80px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .footer2_R .footer_Rcontent .footer_R1 p {
+    color: #000;
+    width: 80px;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Inter";
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_R .footer_Rcontent .footer_R2 h2 {
+    color: #000;
+    width: 100px;
+    cursor: pointer;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer2_R .footer_Rcontent .footer_R2 p {
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-family: "Inter";
+    font-weight: bold;
+    line-height: normal;
+  }
+  .footer_sns {
+    margin: auto;
+    margin-left: 0px;
+  }
+  .footer_sns ul {
+    display: flex;
+  }
+  .footer_sns ul li {
+    display: flex;
+    height: 30px;
+    padding: 0rem;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .footer_sns ul li img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .footer_sns ul li img:hover {
+    transform: scale(1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .main_visual {
+    background: no-repeat;
+    background-size: cover;
+    margin: auto;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -1;
+  }
+  .main_visual img {
+    width: 100%;
+    height: 50%;
+  }
+  .section01 {
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+  }
+  .section01_inner {
+    width: 100%;
+    height: 679px;
+    flex-shrink: 0;
+    background: rgba(29, 28, 28, 0.377);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .section01_content h2 {
+    color: white;
+    text-align: center;
+    font-family: "SUIT";
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 500;
+
+    line-height: normal;
+  }
+  .section01_content p {
+    color: white;
+    text-align: center;
+    font-family: "SUIT";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  /* 섹션2 */
+  .section02 {
+    width: 100%;
+    margin: auto;
+  }
+
+  /* 섹션2 이너 */
+  .section02_inner {
+    position: absolute;
+    width: 100%;
+    height: 2209px;
+    flex-shrink: 0;
+    margin: auto;
+    bottom: 0;
+    margin-top: 350px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid #b7b7b7;
+    background: #fff;
+  }
+
+  .section02_content {
+    display: flex;
+
+    justify-content: space-between;
+    border-bottom: 1px solid #c7c7c7;
+    width: 90%;
+    height: 240px;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .sec2_left {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 100px;
+  }
+  .sec2_left img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .sec2_right .right_L ul li {
+    padding: 1rem;
+    text-align: center;
+    color: #000;
+    font-family: "SUIT";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    border-bottom: 1px dotted #b7b7b700;
+    width: 30px;
+    margin-top: 5px;
+  }
+
+  .sec2_right {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sec2_right .right_L ul li {
+    font-size: 10px;
+    margin-top: 2px;
+    width: 30px;
+  }
+  .sec2_right .right_R {
+  }
+  .sec2_right .right_R ul {
+  }
+  .sec2_right .right_R ul li {
+    padding: 1rem;
+    text-align: center;
+    color: #000;
+    font-family: "SUIT";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 1px dotted #b7b7b7;
+    margin: auto;
+  }
+
+  /* 지도영역 */
+  .section02_map {
+    width: 100%;
+    height: auto;
+    padding: 5px 0px;
+    margin: 45vh auto;
+  }
+  .section02_map h1 {
+    color: #ff0d0d;
+    font-family: "SUIT";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100px;
+    margin-left: 10px;
+    border-bottom: 1px solid #e7e7e700;
+  }
+  .section02_map p {
+    color: #000;
+    font-family: "SUIT";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 0;
+    width: 90%;
+
+    margin: auto;
+  }
+
+  .section02_map1 button {
+    float: right;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    background: #42a4ff;
+    width: 69px;
+    height: 23px;
+    color: #fff;
+    font-family: "SUIT";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .section02_map1 button img {
+    width: 15px;
+  }
+
+  /* 소중한 후기 영역 */
+  .review {
+    margin-top: -250px;
+  }
+
+  .review_inner {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+  }
+
+  .review_heading h2 {
+    color: #000;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-family: "SUIT";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10vh;
+  }
+  .review_content {
+    height: 70vh;
+    border: 0px solid #b9b9b900;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-wrapper {
+    height: 500px;
+    width: 100%;
+  }
+  .swiper-slide {
+    font-size: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 1px solid #b1b1b100;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 10px;
+  }
+
+  .swiper-slide h2 {
+    padding: 10px;
+    color: #000;
+    font-family: "SUIT";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .swiper-slide p {
+    padding: 10px;
+    color: #acacac;
+    font-family: "SUIT";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: -30px;
+  }
+  .swiper-slide span {
+    padding: 0px;
+    width: 269px;
+    height: 83px;
+    color: #000;
+    font-family: "SUIT";
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: underline;
+    line-height: 1;
+  }
+  .swiper-slide em {
+    padding: 10px;
+    color: #000;
+    font-family: "SUIT";
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    display: none;
+  }
+  .swiper-slide img {
+    width: 30px;
+  }
+
+  /* 섹션04 영역 */
+  .section04 {
+    width: 100%;
+    margin-top: -250px;
+    height: 100vh;
+    margin-bottom: 0px;
+    background: #f8f8f8;
+  }
+
+  .section04_inner {
+    width: 100%;
+  }
+  .section04_heading {
+    display: flex;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 1rem;
+    width: 100%;
+  }
+  .section04_heading h2 {
+    color: #000;
+    font-family: "SUIT";
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    line-height: 2;
+    margin-top: 20px;
+  }
+  .section04_heading h3 {
+    color: #000;
+    font-family: "SUIT";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 6;
+    cursor: pointer;
+    margin-left: 6vh;
+  }
+
+  .section04_heading .all {
+    color: red;
+    text-decoration: underline;
+  }
+
+  .section04_content {
+    display: grid;
+    margin-top: 3vh;
+    width: 100%;
+    gap: 10px;
+    grid-template-columns: auto auto;
+  }
+  .sec04_img {
+    margin: 10px auto;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #a8a8a8;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+  }
+  .sec04_img:nth-child(even) {
+  }
+
+  .sec04_text {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background: #ffffffbe;
+    cursor: pointer;
+  }
+
+  .sec04_img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sec04_text p {
+    color: black;
+    font-family: "SUIT";
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 23px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 2;
+  }
+
+  .sec04_img:hover {
+    transform: rotate(0deg);
+  }
+  .sec04_img:hover img {
+    opacity: 1;
+  }
+
+  .sec04_img:hover p {
+    color: rgba(15, 146, 221, 0.808);
+  }
+  .sec04_text img {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    cursor: pointer;
+    animation: ani;
+    filter: invert();
+  }
+}

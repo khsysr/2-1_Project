@@ -1,0 +1,165 @@
+.section01 {
+  height: 236px;
+  margin: 1050px auto auto;
+  width: 1560px;
+}
+
+.section01_1 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+select {
+  border: 1px solid #ffffff;
+  font-size: 35px;
+  text-align: center;
+  font-family: "KBO-Dia-Gothic_bold";
+  color: #1a73c5;
+  height: 100px;
+  font-weight: 900;
+}
+
+select:hover {
+  color: rgba(0, 153, 255, 0.89);
+}
+
+.section01 span {
+  font-size: 50px;
+}
+
+.section01_02 {
+  width: 50%;
+  margin: 10px auto;
+  text-align: center;
+}
+.btnBox {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.btnBox .btn0 {
+  width: 335px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border: 3px solid #1a73c5;
+  border-radius: 30px;
+  background: #fff;
+  color: #1a73c5;
+  font-size: 30px;
+  font-family: "KBO Dia Gothic";
+  font-style: normal;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.btnBox .btn2 {
+  width: 335px;
+  height: 70px;
+  flex-shrink: 0;
+  color: white;
+  background-color: #1a73c5;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "KBO Dia Gothic";
+  font-style: normal;
+  font-weight: 500;
+}
+
+.btnBox .btn:hover {
+  border: 3px solid #000;
+  text-decoration: underline;
+}
+
+.btnBox .btn2:hover:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .section01 {
+    height: auto;
+    margin: 30vh auto auto auto;
+    width: 100%;
+  }
+  .section01_1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 2vh;
+  }
+
+  select {
+    border: 1px solid #ffffff;
+    font-size: 12px;
+    text-align: center;
+    font-family: "KBO-Dia-Gothic_bold";
+    color: #1a73c5;
+    height: 50px;
+    font-weight: 900;
+  }
+  .section01 span {
+    font-size: 15px;
+  }
+
+  .section01_1 img {
+    width: 5vh;
+    height: 3vh;
+  }
+
+  .btnBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .btnBox .btn0 {
+    width: 80%;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid #1a73c5;
+    border-radius: 30px;
+    background: #fff;
+    color: #1a73c5;
+    font-size: 15px;
+    font-family: "KBO Dia Gothic";
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .btnBox img {
+    width: 5%;
+  }
+
+  .btnBox .btn2 {
+    margin-left: 1vh;
+    width: 80%;
+    height: 30px;
+    flex-shrink: 0;
+    color: white;
+    background-color: #1a73c5;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "KBO Dia Gothic";
+    font-style: normal;
+    font-weight: 500;
+  }
+}

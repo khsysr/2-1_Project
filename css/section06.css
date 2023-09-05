@@ -1,0 +1,429 @@
+.section06 {
+  width: 1920px;
+  margin: auto;
+  height: 800px;
+}
+.section06_inner {
+  display: flex;
+  width: 1700px;
+  margin: auto;
+}
+
+/* 왼쪽 */
+.left_06 {
+  height: 541px;
+  width: 613px;
+  margin-top: 150px;
+
+  margin-left: -30px;
+}
+.left_06 .left_heading {
+  display: flex;
+  position: relative;
+}
+
+.left_heading_content {
+  width: 577px;
+  height: 302px;
+  text-align: center;
+  line-height: 3;
+  margin-left: 30px;
+}
+
+.left_heading::after {
+  content: "";
+  height: 300px;
+  border: 1px solid #c5c4c4;
+  position: absolute;
+  left: 325px;
+}
+
+.left_heading_content h2 {
+  color: #000;
+  font-family: "KBO Dia Gothic";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 50px;
+}
+.left_heading_content em {
+  color: #1991ff;
+  font-family: "KBO Dia Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.left_heading_content img {
+  margin-top: 50px;
+}
+.left_06 .left_text {
+  margin-left: 50px;
+  margin-top: 80px;
+  color: #000;
+  font-family: "KBO Dia Gothic";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.left_06 .left_text h3 {
+  width: 570px;
+}
+.left_06 .left_text h3 b {
+  color: red;
+  text-decoration: underline;
+}
+.left_06 .left_text p {
+  margin-top: 30px;
+  color: #000;
+  font-family: "KBO Dia Gothic";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* 오른쪽 */
+.right_06 {
+  width: 935px;
+  height: 541px;
+  margin-top: 150px;
+  display: flex;
+  margin-left: 50px;
+}
+.right_06 span {
+  display: flex;
+  width: 271px;
+  height: 39px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "KBO Dia Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.right_06 span b {
+  width: 520px;
+}
+
+.right_Lcontent_heading {
+  width: 935px;
+  height: 0;
+  color: #000;
+  font-family: "KBO Dia Gothic";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+.right_06 .right_Lcontent {
+  width: 50%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.right_06 .right_Lcontent h5 {
+}
+/* 왼쪽 상자 박스 */
+.section06_box {
+  width: 207.194px;
+  height: 122.109px;
+  margin-left: 15px;
+  margin-bottom: 22px;
+  border-radius: 20px;
+  border: 1px solid #a7a7a7;
+  background: #fbfbfb;
+  box-shadow: 10px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.section06_box:hover {
+  background-color: #e58c3a;
+  transform: scale(1.2);
+
+  filter: invert();
+}
+.section06_box:hover p {
+}
+
+.section06_box .box1 {
+  width: 45px;
+  height: 45px;
+  background-image: url(../image/icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 5.5%;
+  margin-left: 80px;
+  margin-top: 30px;
+  display: inline-block;
+}
+.section06_box .box2 {
+  width: 45px;
+  height: 45px;
+  background-image: url(../image/icon.png);
+  background-repeat: no-repeat;
+  background-position: 24% 5%;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.section06_box .box3 {
+  width: 45px;
+  height: 45px;
+  background-image: url(../image/icon.png);
+  background-repeat: no-repeat;
+  background-position: 91% 5%;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.section06_box .box4 {
+  width: 45px;
+  height: 45px;
+  background-image: url(../image/icon.png);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.section06_box .box5 {
+  width: 45px;
+  height: 50px;
+  background-image: url(../image/icon.png);
+  background-repeat: no-repeat;
+  background-position: 68% 50%;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.section06_box .box6 {
+  width: 45px;
+  height: 45px;
+  background-image: url(../image/icon.png);
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.section06_box p {
+  text-align: center;
+  width: 100%;
+  color: #000;
+  font-family: "KBO Dia Gothic";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: -0.2rem;
+}
+
+.right_06 .right_Rcontent {
+  width: 50%;
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.right_Lcontent span,
+.right_Rcontent span {
+  color: #000;
+  font-family: "KBO Dia Gothic";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.section06_box .box7 {
+  width: 45px;
+  height: 45px;
+  background-image: url(../image/icon.png);
+  background-repeat: no-repeat;
+  background-position: 45% 10%;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.section06_box .box8 {
+  width: 45px;
+  height: 45px;
+  background-image: url(../image/icon.png);
+  background-repeat: no-repeat;
+  background-position: 67% 8%;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.section06_box .box9 {
+  width: 45px;
+  height: 50px;
+  background-image: url(../image/icon.png);
+  background-repeat: no-repeat;
+  background-position: 22% 49%;
+
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.section06_box .box10 {
+  width: 45px;
+  height: 45px;
+  background-image: url(../image/icon.png);
+  background-repeat: no-repeat;
+  background-position: 45% 48%;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.section06_box .box11 {
+  width: 45px;
+  height: 45px;
+  background-image: url(../image/icon.png);
+  background-repeat: no-repeat;
+  background-position: 0% 88%;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.section06_box .box12 {
+  width: 45px;
+  height: 45px;
+  background-image: url(../image/icon.png);
+  background-repeat: no-repeat;
+  background-position: 23% 88%;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.mobile_section {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .section06 {
+    width: 100%;
+    margin: 10vh auto auto auto;
+    height: auto;
+  }
+  .section06_inner {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  /* 왼쪽 */
+  .left_06 {
+    height: 541px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .left_06 img {
+  }
+  .left_06 .left_heading {
+    display: flex;
+    position: relative;
+  }
+  .left_heading::after {
+    content: "";
+    height: 300px;
+    border: 1px solid #ffffff;
+    position: absolute;
+    left: 265px;
+  }
+
+  .left_heading_content {
+    margin: auto;
+  }
+
+  .left_heading_content h2 {
+    color: #000;
+    font-family: "KBO Dia Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 50px;
+  }
+  .left_heading_content em {
+    color: #1991ff;
+    font-family: "KBO Dia Gothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  .left_heading_content img {
+    margin-top: 50px;
+  }
+  .left_06 .left_text {
+    margin: 5vh auto;
+    color: #000;
+    font-family: "KBO Dia Gothic";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 2vh;
+  }
+  .left_06 .left_text h3 {
+    width: 57vh;
+  }
+  .left_06 .left_text h3 b {
+    color: red;
+    text-decoration: underline;
+  }
+  .left_06 .left_text p {
+    margin-top: 30px;
+    color: #000;
+    font-family: "KBO Dia Gothic";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  /* 오른쪽 */
+  .right_06 {
+    width: 100%;
+    height: auto;
+    display: none;
+    border: 1px solid #000;
+    margin: auto;
+  }
+
+  .mobile_section {
+    background-color: #eeeeee;
+    height: 50vh;
+    display: flex;
+  }
+  .mobile_inner {
+    margin-top: 5vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .mobile_inner h2 {
+    font-size: 20px;
+    font-family: "KBO Dia Gothic";
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .mobile_inner ul {
+    font-family: "KBO Dia Gothic";
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .mobile_inner li {
+    width: 10vh;
+    height: 7vh;
+    text-align: center;
+    line-height: 4;
+    border-radius: 20px;
+    background: #fbfbfb;
+    box-shadow: 10px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+}
