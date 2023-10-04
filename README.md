@@ -4,7 +4,7 @@
 )
 
 - 배포 URL :  https://khsysr.github.io/2-1_Project
-- 기획서 URL : https://docs.google.com/presentation/d/1si2UPUVSYoXAg-GIhOOEpmwXsEbF6jaaquB5TQ36d9Q/edit?
+- 기획서 URL : https://docs.google.com/presentation/d/1apPLGvl4uJj3h8qKZNnoLENm9mq_myPYyB9i96U2UxA/edit#slide=id.g20a8150ae5b_0_1
 - Figma URL : https://www.figma.com/file/tfSwzkxlaMGV4SDdAumKwA/%EA%B0%9C%EC%9D%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?type=design&node-id=0%3A1&mode=design&t=YwpyKgP9tzf4cLKe-1
 
 ## 🙋 프로젝트 소개
